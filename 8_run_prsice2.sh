@@ -1,0 +1,21 @@
+Rscript PRSice.R \
+   --prsice PRSice_linux \
+   --base ${CVaging_UKB_exclude_adj} \
+   --chr CHR \
+   --A1 A1 \
+   --A2 A2 \
+   --stat BETA \
+   --snp SNP \
+   --bp POS \
+   --pvalue P \
+   --target ${CVDSample} \
+   --pheno ${Phenotype} \
+   --pheno-col Phenotype \
+   --binary-target T \
+   --quantile 100 \
+   --quant-break 10,20,30,40,50,60,70,80,90,100 \
+   --quant-ref 10 \
+   --cov ${UKB_Covariates} \
+   --out ${output} \
+   --thread 5
+
